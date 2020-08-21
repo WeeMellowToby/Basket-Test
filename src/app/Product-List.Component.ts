@@ -1,10 +1,12 @@
 import { Component, Input } from '@angular/core';
-
 @Component({
-  selector: 'hello',
-  template: `<h1>Hello {{name}}!</h1>`,
-  styles: [`h1 { font-family: Lato; }`]
+  selector: 'ProductListComponent',
+  template: `
+  <h1>Products List</h1>
+  <div *ngFor="let product of products">{{product.name}}<div>
+  `,
+  styles: [`:host{border: 1px solid #000;}`]
 })
 export class ProductListComponent  {
-  @Input() name: string;
+  @Input() products: any[];
 }
