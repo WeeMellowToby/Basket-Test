@@ -23,8 +23,8 @@ div:nth-child(1) {font-weight: bold;}
 export class ProductComponent  {
   @Input() products: any;
   @Output() productAdded = new EventEmitter();
-  addProductToCart(product) {
-    this.productAdded.emit(product);
+  addProductToCart(products) {
+    this.productAdded.emit(products);
   }
   
 }

@@ -3,7 +3,6 @@ import { Component, VERSION } from '@angular/core';
 @Component({
   selector: 'my-app',
   templateUrl: './app.component.html',
-  template : `<product-list (productAdded)="addProductToCart($event)" [products]="productList"></product-list>`,
   styleUrls: [ './app.component.css' ]
    
  

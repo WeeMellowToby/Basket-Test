@@ -11,7 +11,7 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 export class ProductListComponent  {
   @Input() products: any[];
   @Output() productAdded = new EventEmitter();
-  addProductToCart(product) {
-    this.productAdded.emit(product);
+  addProductToCart(products) {
+    this.productAdded.emit(products);
   }
 }
